@@ -70,6 +70,17 @@ namespace Day2
                     {
                         validPasswords.Add(item);
                     }
+
+
+                    //POLICY CHANGE APPROACH. COMMENT OUT ABOVE FOR LOOP AND IF STATEMENT
+
+                    //Since zero index is not used, the min and max values were each subtracted by 1, respectively. Prevents IndexOutOfRangeException at upper end.
+                    //if (pass[min - 1].Equals(Convert.ToChar(letter)) ^ pass[max - 1].Equals(Convert.ToChar(letter)))
+                    //{
+                    //    validPasswords.Add(item);
+                    //}
+
+                    //POLICY CHANGE APPROACH COMPLETED
                 }
             }
 
