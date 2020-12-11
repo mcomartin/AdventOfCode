@@ -16,8 +16,6 @@ namespace Day4
 
             string[] rawPassports = input.Split(new string[] { "\n\n" }, StringSplitOptions.RemoveEmptyEntries);
 
-            //Create a dictionary to contain key/value pairs of passport data
-            //Dictionary<string, List<Passport>> validPassports = new Dictionary<string, List<Passport>>();
             //Create a List to contain valid passports
             List<Passport> validPassports = new List<Passport>();
 
@@ -33,11 +31,7 @@ namespace Day4
             }
 
             //Summary
-            Console.WriteLine("The total number of valid passports is: {0}", validPassports.Count());
-
-
-            
-            
+            Console.WriteLine("The total number of valid passports is: {0}", validPassports.Count());    
         }
     }
 }

@@ -126,6 +126,7 @@ namespace Day4
             if (data.Contains("byr") && data.Contains("iyr") && data.Contains("eyr") && data.Contains("hgt") && data.Contains("hcl") && 
                 data.Contains("ecl") && data.Contains("pid"))
             {
+                //Adds properties to object
                 Byr = int.Parse(findBYR.Match(data).Value);
                 Iyr = int.Parse(findIYR.Match(data).Value);
                 Eyr = int.Parse(findEYR.Match(data).Value);
