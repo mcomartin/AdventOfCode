@@ -113,6 +113,7 @@ namespace Day4
         //No arg constructor
         public Passport(string data)
         {
+            //Obtains specified area of string
             Regex findBYR = new Regex(@"(?<=byr:)\d*"); //returns number after byr: in string
             Regex findIYR = new Regex(@"(?<=iyr:)\d*"); //returns number after iyr: in string
             Regex findEYR = new Regex(@"(?<=eyr:)\d*"); //returns number after eyr: in string
@@ -121,8 +122,9 @@ namespace Day4
             Regex findECL = new Regex(@"(?<=ecl:)\W?\w*"); //returns number after ecl: in string
             Regex findPID = new Regex(@"(?<=pid:)\w*"); //returns number after pid: in string
             Regex findCID = new Regex(@"(?<=cid:)\d*"); //returns number after cid: in string
+            
 
-            //Checks for the presence of required passport properties
+            //Checks for the presence of required passport properties in input string
             if (data.Contains("byr") && data.Contains("iyr") && data.Contains("eyr") && data.Contains("hgt") && data.Contains("hcl") && 
                 data.Contains("ecl") && data.Contains("pid"))
             {
@@ -142,7 +144,7 @@ namespace Day4
                 }
             }
 
-            
+
         }
 
         //ToString override method
